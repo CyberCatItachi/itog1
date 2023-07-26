@@ -21,11 +21,11 @@ string[] GetArray(int n)
 
 for (int i = 0; i<n; i++)
 {
-    if (n - i == 1)
+    if (n - i == 1 && array[i].Length < 4 )
     {
         Write($"{array[i]}");
     }
-    else if (array[i].Length > 2 && n - i > 1)
+    else if (array[i].Length < 4 && n - i > 1)
     {
         Write($"{array[i]}, ");
     }
