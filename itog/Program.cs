@@ -21,8 +21,12 @@ string[] GetArray(int n)
 
 for (int i = 0; i<n; i++)
 {
-    if (array[i].Length > 2)
+    if (n - i == 1)
     {
-        WriteLine($"{array[i]}");
+        Write($"{array[i]}");
+    }
+    else if (array[i].Length > 2 && n - i > 1)
+    {
+        Write($"{array[i]}, ");
     }
 }
